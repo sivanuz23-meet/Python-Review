@@ -15,7 +15,7 @@ def add_comment(video, username, comment_text):
 	return video 
 
 for i in range(495):
-	like(create_youtube_video("hello world", "video about the world"))
-print(like)
+	dislike(create_youtube_video("hello world", "video about the world"))
+print(dislike)
 
 print(add_comment(create_youtube_video("hello world", "video about the world"), "Sivan", "That's a good video"))
