@@ -12,10 +12,11 @@ def dislike(video):
 	return video
 def add_comment(video, username, comment_text):
 	video["comments"][username] = comment_text
-	return video 
+	return video
 
+youtube = create_youtube_video("hello world", "video about the world")
 for i in range(495):
-	like(create_youtube_video("hello world", "video about the world"))
-print(like)
+	like(youtube)
+print(like(youtube))
 
-print(add_comment(create_youtube_video("hello world", "video about the world"), "Sivan", "That's a good video"))
+print(add_comment(youtube, "Sivan", "That's a good video"))
