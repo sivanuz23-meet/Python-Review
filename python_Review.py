@@ -21,12 +21,13 @@ def similarity_to_video(a,b):
 			counter+=1
 	percentage = counter/len(b)
 	print(str(percentage*100.0) + "%")
+	return percentage
 
 youtube1 = create_youtube_video("hello world", "video about the world", ["#great", "#good movie"])
-youtube2 = create_youtube_video("testing", "random description", ["#good", "#brilliant"])
-similarity_to_video(youtube1, youtube2)
-for i in range(495):
+youtube2 = create_youtube_video("testing", "random description", ["#great", "#good movie"])
+
+for i in range(494):
 	like(youtube1)
 print(like(youtube1))
-
 print(add_comment(youtube1, "Sivan", "That's a good video"))
+similarity_to_video(youtube1, youtube2)
